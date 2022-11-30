@@ -9,3 +9,5 @@ To reproduce error:
 * `/opt/ngrok http 7000`
 
 Hit ngrok endpoint and the hello world component will fail to be served.
+
+Works OK when I launch javalin through intellij run config and hit from localhost (isDev == true).
