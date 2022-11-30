@@ -1,0 +1,23 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+repositories {
+    // Use jcenter for resolving dependencies.
+    // You can declare any Maven/Ivy/file repository here.
+    jcenter()
+    mavenCentral()
+}
+
+dependencies {
+    implementation('org.slf4j:slf4j-simple:2.0.5')
+    implementation 'io.javalin:javalin:5.2.0'
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.14.0'
+    implementation 'org.webjars.npm:vue:3.2.26'
+}
+
+application {
+    // Define the main class for the application.
+    mainClassName = 'javalinvue.Main'
+}
